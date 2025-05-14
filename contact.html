@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee254 - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Coffee254</div>
+            <div class="nav-links">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="cart.html" class="cart-button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="section-container">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for inquiries, reservations, or feedback.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@coffee254.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form">
+                        <input type="text" id="contact-name" placeholder="Your Name" required>
+                        <input type="email" id="contact-email" placeholder="Your Email" required>
+                        <textarea id="contact-message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Contact Us</h3>
+                <p>123 Coffee Street, Nairobi, Kenya</p>
+                <p>Phone: +254 704955300</p>
+                <p>Email: info@coffee254.com</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers and updates</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Coffee254. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="subscribe-modal">
+        <div class="modal-content">
+            <h3>Thank you for subscribing!</h3>
+            <p>You will receive our updates and special offers in your inbox.</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <h3>Message Sent!</h3>
+            <p>Thank you for your message. We'll get back to you soon.</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
